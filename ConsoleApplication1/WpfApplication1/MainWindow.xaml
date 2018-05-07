@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="Oblicz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="353,33,0,0" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Podaj ilość kropek wykorzystanych do obliczenia przybliżenia PI" VerticalAlignment="Top" Height="27" Width="343"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="353,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="328,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" Height="22" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.794"/>
+                    <RotateTransform Angle="-1.342"/>
+                    <TranslateTransform Y="0.519"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Canvas x:Name="myCanva" HorizontalAlignment="Left" Height="200" Margin="10,111,0,0" VerticalAlignment="Top" Width="200">
+          
+            <Rectangle Fill="#FFF4F4F5" Height="200" Stroke="Black" Width="200"/>
+            <Ellipse Fill="#FFF4F4F5" Height="200" Stroke="Black" Width="200"/>
+        </Canvas>
+
+    </Grid>
+</Window>
